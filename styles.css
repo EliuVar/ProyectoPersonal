@@ -1,0 +1,83 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+}
+
+#page {
+    position: relative;
+    width: 100%;
+    height: 1550px;
+    margin: auto;
+}
+
+body {
+    background: url('../rsc/imgs/carapaz.jpg') no-repeat center;
+    overflow-x: hidden;
+    font-family: serif;
+}
+
+#main {
+    position: relative;
+    width: 100%;
+    height: 1000px;
+    top: 600px;
+    background: #FFF;
+}
+
+#banner {
+    font-size: 112px;
+    position: absolute;
+    top: -325px;
+    right: 350px;
+    color: #EEEEEE;
+    text-shadow: 5px 5px 15px #000;
+    line-height: 80px;
+}
+
+#parrafos {
+    padding: 3px 20px 2px 20px;
+    height: 200px;
+}
+
+.h2 {
+    position: absolute;
+}
+
+@keyframes bgmove {
+    0% {
+        background-position: -0px -480px;
+    }
+    50% {
+        background-position: 0px 0px;
+    }
+    100% {
+        background-position: -0px -480px;
+    }
+}
+
+body {
+    animation-name: bgmove;
+    animation-duration: 40s;
+    animation-timing-function: ease;
+    animation-iteration-count: infinite;
+}
+
+.texto {
+    column-gap: 40px;
+    column-rule: 1px inset #333;
+    position: relative;
+    height: 30px;
+    padding: 3px 200px 2px 200px;
+    text-align: justify;
+    color: #333;
+    font-size: 18px;
+}
+
+footer {
+    background: #555;
+    box-shadow: inset 0px 0px 18px #000;
+    position: relative;
+    width: 1000%;
+    height: 100px;
+}
